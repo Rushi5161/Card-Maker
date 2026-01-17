@@ -1,6 +1,7 @@
 let form = document.querySelector(".form");
 let inputs = document.querySelectorAll("input");
 let main = document.querySelector("#main");
+let box = document.querySelector("#box");
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -33,11 +34,10 @@ form.addEventListener("submit", function(e){
     main.appendChild(card);
     console.log(card);
 
-    inputs.forEach(function(val){
-        if(val.type !== "submit"){
-            val.value = "";
-        }
-        
-    })
+    // inputs.forEach(function(val){
+    //     if(val.type !== "submit"){ 
+    //         val.value = "";
+    //     }  
+    // })
 
 })
